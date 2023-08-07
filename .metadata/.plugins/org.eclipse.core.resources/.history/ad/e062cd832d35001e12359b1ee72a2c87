@@ -1,0 +1,64 @@
+package bancoFatecZL;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta conta = new Conta();
+		
+		conta.titular = JOptionPane.showInputDialog("Digite o nome do titular: ");
+
+		String menu;
+		boolean ativo = true;
+		
+		do {
+			menu = JOptionPane.showInputDialog("=== BEM VINDO AO CODEBANK === \n"
+					+ "1. Nome do Titular \n"
+					+ "2. Verificar Saldo \n"
+					+ "3. Depositar \n"
+					+ "4. Sacar \n"
+					+ "5. Sair");
+			
+			switch (menu) {
+			case "1":
+				JOptionPane.showMessageDialog(null, conta.titular + " é o nome do dono da conta.");
+
+				break;
+				
+			case "2":
+				JOptionPane.showMessageDialog(null, "O saldo da conta é R$" + conta.saldo);
+
+				break;
+				
+			case "3":
+				int valorDeposito = Integer.parseInt(JOptionPane.showInputDialog("Informe o valor a ser depositador: "));
+				conta.deposita(valorDeposito);		
+				
+				break;
+
+			case "4":
+				int valorSaque = Integer.parseInt(JOptionPane.showInputDialog("Informe o valor a ser depositador: "));
+				if (conta.saca(valorSaque)) {
+					JOptionPane.showMessageDialog(null, "Saque feito com sucesso. ")
+				}	
+				
+				else {
+					JOptionPane.showMessageDialog(null, "O saldo da conta é R$" + conta.saldo + ". Não é suficiente para o saque.");
+				}
+				
+				break;
+				
+
+			case "5":
+				ativo = false;		
+				
+				break;
+				
+			}
+		} while (ativo);
+		
+		
+	}
+}

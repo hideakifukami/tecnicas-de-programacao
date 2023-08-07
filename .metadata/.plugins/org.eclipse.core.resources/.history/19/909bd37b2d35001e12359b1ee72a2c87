@@ -1,0 +1,21 @@
+package bancoFatecZL;
+
+public class Conta {
+	//atributos
+	public String titular;
+	public double saldo;
+	
+
+	//metodos
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
+	
+	public void saca(double valor) {
+		if (this.saldo < valor) {
+			System.out.println("Saldo insuficiente!");
+		} else {
+			this.saldo -= valor;
+		}
+	}
+}
