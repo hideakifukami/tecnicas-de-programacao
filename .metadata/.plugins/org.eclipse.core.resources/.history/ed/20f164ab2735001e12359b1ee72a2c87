@@ -1,0 +1,14 @@
+package bancoFatecZL;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Conta conta = new Conta();		
+		conta.titular = JOptionPane.showInputDialog("Digite o nome do titular: ");
+		JOptionPane.showMessageDialog(null, conta.titular + " é o dono da conta.");
+		conta.saldo = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do saldo: "));
+	}
+}
