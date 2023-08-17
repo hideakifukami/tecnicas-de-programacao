@@ -1,5 +1,7 @@
 package projetoMercado;
 
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
 public class Main {
@@ -9,8 +11,8 @@ public class Main {
 		// TODO code application logic here
         String menu= " Bem vindo ao Sistema Mercadão. \n Escolha a opção desejada. \n 1- Cadastrar Produto. \n 2- Remover Produto. \n 3- Listar Produtos. \n 4- Calcular total da compra. \n 0-Sair.";
         int op,qtd;
-        Produto p = new Produto();
-             
+        Produto p = new Produto();       
+        
         do{
         op= Integer.parseInt(JOptionPane.showInputDialog(null, menu));
         switch(op){
