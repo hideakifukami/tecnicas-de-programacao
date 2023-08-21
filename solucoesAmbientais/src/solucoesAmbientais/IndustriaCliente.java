@@ -44,6 +44,4 @@ public class IndustriaCliente {
 				+ "\nEmail: " + email + "\nData de Abertura: " + dataAbertura + "\n";
 	}
 	
-	
-	
 }
