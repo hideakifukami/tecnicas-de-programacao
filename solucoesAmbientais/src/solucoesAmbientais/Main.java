@@ -40,17 +40,20 @@ public class Main {
 
 			case 3:
 				cnpjEmpresa = JOptionPane.showInputDialog("Informe o CNPJ da empresa: ");
+				
 				for (i = 0; i < clientes.size(); i++) {
 					if (clientes.get(i).cnpj.equals(cnpjEmpresa)) {
-						JOptionPane.showMessageDialog(null, "Cliente Encontrado! \n\n" + clientes.get(i).toString());
+						JOptionPane.showMessageDialog(null, "Cliente Encontrado! \n" + clientes.get(i).toString());
 						aux = true;
 					}
 				}
 				
 
-				if (aux == false) {
+				if (!aux) {
 					JOptionPane.showMessageDialog(null, "Cliente Não Encontrado!");
 				}
+				
+				aux = false;
 				
 				break;
 
@@ -63,7 +66,7 @@ public class Main {
 				break;
 
 			case 0:
-				JOptionPane.showInputDialog("Obrigado! Volte Sempre!");
+				JOptionPane.showMessageDialog(null, "Obrigado! Volte Sempre!");
 				break;
 
 			default:
