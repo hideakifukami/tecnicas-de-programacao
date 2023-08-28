@@ -41,9 +41,9 @@ public class Main {
 			case 3:
 				cnpjEmpresa = JOptionPane.showInputDialog("Informe o CNPJ da empresa: ");
 				
-				for (i = 0; i < clientes.size(); i++) {
-					if (clientes.get(i).cnpj.equals(cnpjEmpresa)) {
-						JOptionPane.showMessageDialog(null, "Cliente Encontrado! \n" + clientes.get(i).toString());
+				for (IndustriaCliente cliente: clientes) {
+					if (cliente.cnpj.equals(cnpjEmpresa)) {
+						JOptionPane.showMessageDialog(null, "Cliente Encontrado! \n" + cliente.toString());
 						aux = true;
 					}
 				}
