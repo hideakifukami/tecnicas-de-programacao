@@ -3,4 +3,5 @@ INDEX VERSION 1.131+C:\Users\FATEC ZONA LESTE\tecnicas-de-programacao\.metadata\
 2839545388.index
 1865797976.index
 4211759180.index
+3009207953.index
 1590169572.index

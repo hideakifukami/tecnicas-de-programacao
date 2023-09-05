@@ -2,7 +2,8 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="solucoesAmbientais.IndustriaCliente"/>
+    <fullyQualifiedTypeName name="controleEstoque.Produto"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="solucoesAmbientais.IndustriaCliente"/>
 </qualifiedTypeNameHistroy>

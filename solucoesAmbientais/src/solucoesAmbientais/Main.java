@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<IndustriaCliente> clientes = new ArrayList<IndustriaCliente>();
-		int op, i;
+		int op;
 		boolean aux = false;
 		String nomeEmpresa, cnpjEmpresa, telefoneEmpresa;
 		String menu = "Bem vindo à Soluções Ambientais! \n"				
