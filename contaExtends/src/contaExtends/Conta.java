@@ -4,13 +4,15 @@ public class Conta {
 	private int numero;
 	private double saldo;
 	private String titular;
+	private static int sequence = 1000;
 	
-	public Conta(int numero, String titular) {
-		this.numero = numero;
+	public Conta(String titular) {
+		this.numero = sequence++;
 		this.titular = titular;
 	}
 
 	public Conta() {
+		this.numero = sequence++;
 	}
 
 	public int getNumero() {
@@ -36,7 +38,7 @@ public class Conta {
 	public void setTitular(String titular) {
 		this.titular = titular;
 	}
-	
+
 	public boolean saca(double valor) {
 		if((this.saldo >= valor) && (this.saldo - valor >= 0)) {
 			this.saldo -= valor;
@@ -50,8 +52,12 @@ public class Conta {
 		this.saldo += valor;
 	}
 	
+	public void imprimirTipoConta() {
+		System.out.println("Conta Comum");
+	}
+	
 	@Override
     public String toString() {
-        return ("\nConta Corrente: "+ this.numero+ " \nTitular: " + this.titular +"\nSaldo: R$" + this.saldo);
+        return ("\nConta Corrente: "+ this.numero+ " \nTitular: " + this.titular +"\nSaldo: R$" + this.saldo + "\n");
     }
 }
