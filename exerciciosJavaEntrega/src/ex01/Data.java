@@ -24,10 +24,7 @@ public class Data {
 		} else {
 			return false;
 		}
-	}  
-	
-	System.out.println(this.dia);
-	
+	}  	
 	
 
 }
