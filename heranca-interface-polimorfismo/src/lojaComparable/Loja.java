@@ -1,6 +1,7 @@
 package lojaComparable;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -92,6 +93,7 @@ public class Loja {
 
 			case 2:
 				
+					Collections.sort(listaProdutos);
 					System.out.println(listaProdutos);
 					System.out.println("Escolha um produto pelo código:"
 							+ "\nPara voltar insira '0'");

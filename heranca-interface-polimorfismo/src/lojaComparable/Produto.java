@@ -52,14 +52,10 @@ public class Produto implements Comparable<Produto> {
 		else return false;
 	}
 
-	@Override
-	public int compareTo(Produto produto) {
-		if (this.nome.equals(produto.getNome())) {
-			return 1;
-		} else return 0;
-		
-		
-	}
+	 @Override
+	    public int compareTo(Produto outroProduto) {
+	        return this.getNome().compareTo(outroProduto.getNome());
+	    }
 		
 	
 }
