@@ -15,7 +15,6 @@ public class CD extends Produto {
 	public int getFaixas() {
 		return faixas;
 	}
-
 	public void setFaixas(int faixas) {
 		this.faixas = faixas;
 	}
